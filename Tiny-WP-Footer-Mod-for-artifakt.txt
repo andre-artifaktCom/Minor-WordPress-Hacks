@@ -1,0 +1,6 @@
+// Tiny WP Footer Mod for artifakt
+
+function remove_footer_admin () {
+    echo '&copy; 2013 - the <a href="#">artifakt Communications</a> Team';
+}
+add_filter('admin_footer_text', 'remove_footer_admin');
